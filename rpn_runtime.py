@@ -14,9 +14,6 @@ class RPNRuntime(object) :
 
         self.stack=np.array([0]*self.STACKSIZE,dtype=float)
         self.registers=np.array([0]*self.NREGISTERS,dtype=float)
-
-        self.stack[0] = math.pi/24.0   
-        self.registers[0]=math.pi
         
         self.display_state = 0 # 0 means start a new number with 0123456789., 1 means add to existing number
 
